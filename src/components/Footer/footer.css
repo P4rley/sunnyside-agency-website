@@ -1,0 +1,45 @@
+.sunnyside__footer {
+  background-color: var(--footer);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+}
+
+.sunnyside__footer-heading {
+  color: #19536b;
+  font-size: 30px;
+  font-weight: 800;
+  font-family: var(--font-family2);
+}
+
+.sunnyside__footer-links {
+  margin: 3rem;
+}
+
+.sunnyside__footer-links a {
+  margin: 2rem;
+  font-family: var(--font-family);
+  color: var(--photography-text);
+  font-weight: 600;
+  font-size: 18px;
+  transition: 0.3s all ease;
+}
+
+.sunnyside__footer-links a:hover {
+  color: #fff;
+}
+
+.funnyside__footer-social a {
+  margin: 1rem;
+}
+
+.funnyside__footer-social svg {
+  color: #19536b;
+  transition: 0.3s all ease;
+}
+
+.funnyside__footer-social a:hover svg {
+  color: #fff;
+}
