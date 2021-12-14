@@ -8,20 +8,19 @@
 }
 
 .sunnyside__projects img {
-  max-width: 415px;
+  width: 25%;
   max-height: 415px;
 }
 
 @media screen and (max-width: 1030px) {
   .sunnyside__projects img {
-    max-width: 317px;
     max-height: 317px;
   }
 }
 
 @media screen and (max-width: 400px) {
   .sunnyside__projects img {
-    max-width: 232.5px;
+    width: 50%;
     max-height: 232.5px;
   }
 }
