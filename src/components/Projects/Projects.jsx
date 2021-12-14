@@ -8,10 +8,10 @@ import "./projects.css";
 const Projects = () => {
   return (
     <div className="sunnyside__projects">
-      <img src={imageOne} alt="" />
-      <img src={imageTwo} alt="" />
-      <img src={imageThree} alt="" />
-      <img src={imageFour} alt="" />
+      <img src={imageOne} alt="milk" />
+      <img src={imageTwo} alt="orange" />
+      <img src={imageThree} alt="cone" />
+      <img src={imageFour} alt="sugarcubes" />
     </div>
   );
 };
