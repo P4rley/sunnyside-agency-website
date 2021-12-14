@@ -1,0 +1,130 @@
+.sunnyside__navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem 4rem;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 9999;
+  transition: 0.5s all ease-in-out;
+}
+
+.sunnyside__navbar.active {
+  background-color: var(--graphic-design-text);
+  padding: 1rem 4rem;
+}
+
+.sunnyside__navbar-menu svg {
+  cursor: pointer;
+}
+
+.sunnyside__navbar-container {
+  display: none;
+}
+
+.sunnyside__navbar-menu_container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: absolute;
+  left: 4rem;
+  top: 7rem;
+  right: 5rem;
+  background-color: #fff;
+  padding: 2rem;
+  text-align: center;
+}
+
+.sunnyside__navbar-menu_container::before {
+  content: "";
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  top: -40px;
+  right: 0;
+  background: linear-gradient(to bottom right, transparent 50%, #fff 50%);
+}
+
+.sunnyside__navbar-menu_container_links li {
+  margin: 2rem 0;
+}
+
+.sunnyside__navbar-link {
+  font-size: 20px;
+  color: var(--Very-dark-grayish-blue);
+  font-family: var(--font-family);
+  font-weight: 500;
+  transition: 0.3s all ease;
+}
+
+.sunnyside__navbar-link:hover {
+  color: var(--Grayish-blue);
+}
+
+.sunnyside__navbar-menu_container_links button {
+  border: none;
+  outline: none;
+  background-color: var(--Yellow);
+  padding: 1rem 2rem;
+  border-radius: 30px;
+  font-family: var(--font-family2);
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 1px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: 0.3s all ease;
+}
+
+.sunnyside__navbar-menu_container_links button:hover {
+  background-color: var(--Soft-red);
+}
+
+@media screen and (min-width: 720px) {
+  .sunnyside__navbar-container {
+    display: flex;
+  }
+
+  .sunnyside__navbar-container_links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .sunnyside__navbar-container_links li {
+    margin: 0 2rem;
+  }
+
+  .sunnyside__navbar-container_links .sunnyside__navbar-link {
+    color: #fff;
+  }
+
+  .sunnyside__navbar-container_links button {
+    border: none;
+    outline: none;
+    background-color: var(--Yellow);
+    padding: 1rem 2rem;
+    border-radius: 30px;
+    font-family: var(--font-family2);
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 1px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: 0.3s all ease;
+  }
+
+  .sunnyside__navbar-container_links .sunnyside__navbar-link:hover {
+    color: var(--Grayish-blue);
+  }
+
+  .sunnyside__navbar-container_links button:hover {
+    background-color: var(--Soft-red);
+  }
+
+  .sunnyside__navbar-menu {
+    display: none;
+  }
+}

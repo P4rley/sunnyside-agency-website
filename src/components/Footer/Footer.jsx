@@ -11,9 +11,7 @@ import "./footer.css";
 const Footer = () => {
   return (
     <div className="sunnyside__footer section__padding" id="footer">
-      <div className="sunnyside__footer-heading">
-        sunnyside
-      </div>
+      <div className="sunnyside__footer-heading">sunnyside</div>
 
       <div className="sunnyside__footer-links">
         <a href="#home">About</a>

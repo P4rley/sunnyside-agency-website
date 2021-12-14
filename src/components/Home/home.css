@@ -1,0 +1,54 @@
+.sunnyside__home {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+  background: url(../../assets/mobile/image-header.jpg) no-repeat;
+  background-size: cover;
+}
+
+.sunnyside__home-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.sunnyside__home-container h1 {
+  font-size: 30px;
+  text-transform: uppercase;
+  color: #fff;
+  margin-bottom: 5rem;
+}
+
+.sunnyside__home-container img {
+  animation: arrowdown 1.5s infinite;
+}
+
+@keyframes arrowdown {
+  0% {
+    transform: translateY(-10px);
+  }
+  50% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateY(-10px);
+  }
+}
+
+@media screen and (min-width: 720px) {
+  .sunnyside__home-container h1 {
+    font-size: 42px;
+  }
+  .sunnyside__home {
+    background: url(../../assets/desktop/image-header.jpg) no-repeat;
+    background-size: cover;
+  }
+
+  .sunnyside__home-container h1 {
+    font-size: 60px;
+  }
+}

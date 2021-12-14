@@ -1,0 +1,190 @@
+.sunnyside__services {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sunnyside__services-container {
+  display: grid;
+  grid-template-areas: "desc img" "img2 desc2" "img3 img4";
+  width: 100%;
+}
+
+.sunnyside__services-container-contentA {
+  grid-area: img;
+}
+
+.sunnyside__services-container-contentB {
+  grid-area: desc;
+}
+
+.sunnyside__services-container-contentA2 {
+  grid-area: img2;
+}
+
+.sunnyside__services-container-contentB2 {
+  grid-area: desc2;
+}
+
+.sunnyside__services-container-contentA3 {
+  grid-area: img3;
+}
+
+.sunnyside__services-container-contentB3 {
+  grid-area: img4;
+}
+
+.sunnyside__services-container-contentA img,
+.sunnyside__services-container-contentA2 img {
+  width: 100%;
+  height: 100%;
+}
+
+.sunnyside__services-container-contentB,
+.sunnyside__services-container-contentB2 {
+  background-color: #fff;
+  text-align: left;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  padding: 7.5rem;
+  height: 100%;
+  width: 100%;
+}
+
+.sunnyside__services-container-contentB a,
+.sunnyside__services-container-contentB2 a {
+  font-family: var(--font-family2);
+  color: #000;
+  text-transform: uppercase;
+  font-weight: 500;
+  position: relative;
+}
+
+.sunnyside__services-container-contentB a:hover::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 7px;
+  bottom: 1px;
+  opacity: 0.75;
+  background-color: var(--Yellow);
+}
+
+.sunnyside__services-container-contentB2 a:hover::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 7px;
+  bottom: 1px;
+  opacity: 0.75;
+  background-color: var(--Soft-red);
+}
+
+.sunnyside__services-container-contentA3 {
+  background: url(../../assets/desktop/image-graphic-design.jpg) no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.sunnyside__services-container-contentB3 {
+  background: url(../../assets/desktop/image-photography.jpg) no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.sunnyside__services-container-contentA3,
+.sunnyside__services-container-contentB3 {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  flex-direction: column;
+  padding: 20rem 5rem 0 5rem;
+}
+
+.sunnyside__services-container-contentB h1,
+.sunnyside__services-container-contentB2 h1,
+.sunnyside__services-container-contentA3 h1,
+.sunnyside__services-container-contentB3 h1 {
+  font-family: var(--font-family2);
+  font-size: 32px;
+}
+
+.sunnyside__services-container-contentB p,
+.sunnyside__services-container-contentB2 p {
+  margin: 2rem 0;
+  font-family: var(--font-family);
+  color: var(--graphic-design-text);
+}
+
+.sunnyside__services-container-contentA3 p,
+.sunnyside__services-container-contentB3 p {
+  margin: 2rem 0;
+  font-family: var(--font-family);
+  text-align: center;
+  color: var(--graphic-design-text);
+  font-size: 18px;
+  max-width: 400px;
+}
+
+@media screen and (max-width: 720px) {
+  .sunnyside__services-container {
+    display: grid;
+    grid-template-areas: "img" "desc" "img2" "desc2" "img3" "img4";
+    width: 100%;
+  }
+
+  .sunnyside__services-container-contentA {
+    grid-area: img;
+  }
+
+  .sunnyside__services-container-contentB {
+    grid-area: desc;
+  }
+
+  .sunnyside__services-container-contentA2 {
+    grid-area: img2;
+  }
+
+  .sunnyside__services-container-contentB2 {
+    grid-area: desc2;
+  }
+
+  .sunnyside__services-container-contentA3 {
+    grid-area: img3;
+  }
+
+  .sunnyside__services-container-contentB3 {
+    grid-area: img4;
+  }
+
+  .sunnyside__services-container-contentA3,
+  .sunnyside__services-container-contentB3 {
+    padding: 15rem 5rem 0 5rem;
+  }
+
+  .sunnyside__services-container-contentB,
+  .sunnyside__services-container-contentB2 {
+    text-align: center;
+    align-items: center;
+    padding: 7rem 2rem;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .sunnyside__services-container-contentB h1,
+  .sunnyside__services-container-contentB2 h1,
+  .sunnyside__services-container-contentA3 h1,
+  .sunnyside__services-container-contentB3 h1 {
+    font-size: 30px;
+  }
+
+  .sunnyside__services-container-contentA3,
+  .sunnyside__services-container-contentB3 {
+    padding: 11rem 2rem 0 2rem;
+  }
+}
